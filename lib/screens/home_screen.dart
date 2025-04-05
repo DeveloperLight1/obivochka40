@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'product_detail_screen.dart'; // Импортируем экран с деталями товара
-import 'filter_screen.dart'; // Импортируем экран с деталями товара
-import 'category_items_screen.dart'; // Убедись, что путь правильный
+import 'product_detail_screen.dart';
+import 'filter_screen.dart';
+import 'category_items_screen.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
