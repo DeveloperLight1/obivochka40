@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/screens/login_screen.dart'; // Импортируем экран для регистрации/входа
+import '/screens/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Montserrat',
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(), // Устанавливаем экран логина первым
+      home: LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
