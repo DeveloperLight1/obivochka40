@@ -6,19 +6,19 @@ class SupportScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true, // Контент будет располагаться за AppBar
-      backgroundColor: Color(0xFFF8F8F8), // Фон всего экрана
+      extendBodyBehindAppBar: true,
+      backgroundColor: Color(0xFFF8F8F8),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight),
         child: AppBar(
-          backgroundColor: Color(0xFFF8F8F8), // Устанавливаем тот же цвет для AppBar
+          backgroundColor: Color(0xFFF8F8F8),
           elevation: 0, // Без тени
           title: Text(
             "Поддержка",
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w500,
-              color: Color(0xFF1D1D1D), // Черный текст
+              color: Color(0xFF1D1D1D),
             ),
           ),
           centerTitle: false,
@@ -54,7 +54,7 @@ class SupportScreen extends StatelessWidget {
                 color: Colors.blue,
                 textColor: Colors.white,
                 fontSize: 16, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Увеличиваем закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -67,7 +67,7 @@ class SupportScreen extends StatelessWidget {
                 textColor: Colors.black,
                 borderColor: Colors.blue,
                 fontSize: 16, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Увеличиваем закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -87,7 +87,7 @@ class SupportScreen extends StatelessWidget {
                 color: Colors.blue,
                 textColor: Colors.white,
                 fontSize: 18, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Оставляем стандартное закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -99,7 +99,7 @@ class SupportScreen extends StatelessWidget {
                 color: Colors.green,
                 textColor: Colors.white,
                 fontSize: 18, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Оставляем стандартное закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -111,7 +111,7 @@ class SupportScreen extends StatelessWidget {
                 color: Colors.black,
                 textColor: Colors.white,
                 fontSize: 18, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Оставляем стандартное закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -123,7 +123,7 @@ class SupportScreen extends StatelessWidget {
                 color: Colors.lightBlue,
                 textColor: Colors.white,
                 fontSize: 18, // Устанавливаем размер шрифта
-                borderRadius: BorderRadius.circular(30), // Оставляем стандартное закругление
+                borderRadius: BorderRadius.circular(30),
               ),
             ),
             CustomPadding(
@@ -155,8 +155,8 @@ class SupportButton extends StatelessWidget {
   final Color color;
   final Color textColor;
   final Color? borderColor;
-  final double fontSize; // Добавлен параметр fontSize
-  final BorderRadius borderRadius; // Добавлен параметр borderRadius
+  final double fontSize;
+  final BorderRadius borderRadius;
 
   const SupportButton({
     required this.text,
@@ -164,8 +164,8 @@ class SupportButton extends StatelessWidget {
     required this.color,
     required this.textColor,
     this.borderColor,
-    required this.fontSize, // Добавлен параметр fontSize
-    required this.borderRadius, // Добавлен параметр borderRadius
+    required this.fontSize,
+    required this.borderRadius,
     super.key,
   });
 
@@ -178,14 +178,14 @@ class SupportButton extends StatelessWidget {
         icon: icon,
         label: Text(
           text,
-          style: TextStyle(color: textColor, fontSize: fontSize), // Устанавливаем размер шрифта
+          style: TextStyle(color: textColor, fontSize: fontSize),
         ),
         style: ElevatedButton.styleFrom(
           backgroundColor: color,
           padding: EdgeInsets.symmetric(vertical: 12),
           side: borderColor != null ? BorderSide(color: borderColor!) : null,
           shape: RoundedRectangleBorder(
-            borderRadius: borderRadius, // Используем новый параметр borderRadius
+            borderRadius: borderRadius,
           ),
         ),
       ),
