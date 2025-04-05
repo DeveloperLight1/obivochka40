@@ -32,7 +32,6 @@ class CategoryItemsScreen extends StatelessWidget {
             final item = items[index];
             return GestureDetector(
               onTap: () {
-                // Здесь можно добавить переход к экрану конкретного товара
               },
               child: Container(
                 decoration: BoxDecoration(
