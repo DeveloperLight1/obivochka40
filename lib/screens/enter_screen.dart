@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main_screen.dart'; // Импортируем MainScreen
+import 'main_screen.dart';
 
 class EnterScreen extends StatefulWidget {
   @override
@@ -17,11 +17,10 @@ class _EnterScreenState extends State<EnterScreen> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // Фоновое изображение с затемнением
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/enter_bg.jpg'), // Добавь изображение фона
+                image: AssetImage('assets/images/enter_bg.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -29,7 +28,6 @@ class _EnterScreenState extends State<EnterScreen> {
               color: Colors.black.withOpacity(0.4),
             ),
           ),
-          // Контент
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -41,7 +39,7 @@ class _EnterScreenState extends State<EnterScreen> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
-                      fontWeight: FontWeight.w500, // Medium жирность
+                      fontWeight: FontWeight.w500,
                       letterSpacing: 1.2,
                     ),
                   ),
@@ -103,7 +101,7 @@ class _EnterScreenState extends State<EnterScreen> {
                       'Войти',
                       style: TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.w500, // Medium жирность
+                        fontWeight: FontWeight.w500,
                         color: Colors.white,
                       ),
                     ),
