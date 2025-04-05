@@ -6,8 +6,8 @@ class FavoritesScreen extends StatelessWidget {
         (index) => {
       "title": "Диван-честер",
       "image": index % 2 == 0
-          ? 'assets/images/divans/sofa1.png'  // Путь до изображений
-          : 'assets/images/divans/sofa2.png', // Путь до изображений
+          ? 'assets/images/divans/sofa1.png'
+          : 'assets/images/divans/sofa2.png',
     },
   );
 
