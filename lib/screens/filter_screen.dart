@@ -121,18 +121,7 @@ class _FilterScreenState extends State<FilterScreen> {
           ),
         ),
       ),
-      // Удаляем этот блок для того, чтобы убрать нижние кнопки
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: const [
-      //     BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-      //     BottomNavigationBarItem(icon: Icon(Icons.music_note), label: ''),
-      //     BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: ''),
-      //     BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
-      //   ],
-      //   selectedItemColor: Colors.blue,
-      //   unselectedItemColor: Colors.grey,
-      //   type: BottomNavigationBarType.fixed,
-      // ),
+ ),
     );
   }
 }
