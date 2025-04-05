@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'product_detail_screen.dart'; // Экран с деталями товара
+import 'product_detail_screen.dart';
 
 class CategoryItemsScreen extends StatelessWidget {
   final Map<String, String> category;
@@ -8,7 +8,6 @@ class CategoryItemsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Пример товаров для категории
     final List<Map<String, String>> products = [
       {'title': 'Кресло 1', 'image': 'assets/images/chairs/chair.png'},
       {'title': 'Кресло 2', 'image': 'assets/images/chairs/chair.png'},
