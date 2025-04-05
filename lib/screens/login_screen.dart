@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'registration_screen.dart'; // Импортируем экран регистрации
-import 'enter_screen.dart'; // Импортируем экран войти
-import 'main_screen.dart'; // Если нужно, импортируйте главный экран
+import 'registration_screen.dart';
+import 'enter_screen.dart';
+import 'main_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -12,15 +12,15 @@ class LoginScreen extends StatelessWidget {
           // Задний фон (картинка)
           Positioned.fill(
             child: Image.asset(
-              'assets/images/background.jpg',  // Укажите свой путь к изображению
-              fit: BoxFit.cover,  // Заполнение всего экрана
+              'assets/images/background.jpg',
+              fit: BoxFit.cover,
             ),
           ),
 
-          // Полупрозрачный слой поверх изображения для улучшения читаемости
+
           Positioned.fill(
             child: Container(
-              color: Colors.black.withOpacity(0.5), // Черный фон с полупрозрачностью
+              color: Colors.black.withOpacity(0.5),
             ),
           ),
 
@@ -48,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                       // Действие при нажатии на кнопку Регистрация
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => RegistrationScreen()), // Переход на экран регистрации
+                        MaterialPageRoute(builder: (context) => RegistrationScreen()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
